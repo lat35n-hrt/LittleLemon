@@ -6,7 +6,6 @@ from .serializers import RatingSerializer
 from .models import Rating
 
 # Create your views here.
-# class RatingsView(APIView):
 class RatingsView(generics.ListCreateAPIView):
     queryset = Rating.objects.all()
     serializer_class = RatingSerializer
